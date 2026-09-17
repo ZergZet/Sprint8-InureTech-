@@ -13,7 +13,7 @@ locust -f locustfile.py --host $(minikube service scaletestapp --url | grep -E '
 # Запуск dashboard
 minikube dashb
 
-# Результат
+# Результат (запускается 1 раз после обновления страницы, или в папке Log)
 
 ![VideoLOG](https://github.com/ZergZet/Sprint8-InureTech-/blob/main/Task2/Log/HPA.gif)
 
