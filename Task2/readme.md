@@ -15,7 +15,7 @@ minikube dashb
 
 # Результат
 
-![VideoLOG](Log\HPA.gif)
+![VideoLOG](https://github.com/ZergZet/Sprint8-InureTech-/blob/main/Task2/Log/HPA.gif)
 
 # привести кластер в исходное состояние
 # 1. Остановить Locust, если ещё работает (в его терминале Ctrl+C или)
