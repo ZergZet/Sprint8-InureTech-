@@ -7,17 +7,17 @@
 	kubectl apply -f service.yaml
 	kubectl apply -f hpa.yaml
 
-# Запуск locust 
+# Запуск locust (в отдельном терминале)
 	locust -f locustfile.py --host $(minikube service scaletestapp --url | grep -E '^http' | head -n1) -u 3000 -r 2
 
-# Запуск dashboard
+# Запуск dashboard (в отдельном терминале)
 	minikube dashboard
 
 # Результат (запускается 1 раз после обновления страницы, или в папке Log)
 
 ![VideoLOG](https://github.com/ZergZet/Sprint8-InureTech-/blob/main/Task2/Log/HPA.gif)
 
-# Пиведение кластера в исходное состояние
+# Приведение кластера в исходное состояние
 # 1. Остановить Locust, если ещё работает (в его терминале Ctrl+C или)
 	pkill -f locust
 
